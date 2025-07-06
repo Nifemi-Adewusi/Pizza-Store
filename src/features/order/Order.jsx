@@ -1,5 +1,7 @@
 // Test ID: IIDSAT
 
+/* eslint-disable no-unused-vars */
+
 import {
   calcMinutesLeft,
   formatCurrency,
