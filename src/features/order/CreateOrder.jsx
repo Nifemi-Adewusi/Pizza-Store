@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
+import { createOrder } from "../../services/apiRestaurant";
+import { useLoaderData } from "react-router-dom";
 
 // https://uibakery.io/regex-library/phone-number
 const isValidPhone = (str) =>
@@ -34,6 +36,7 @@ const fakeCart = [
 function CreateOrder() {
   // const [withPriority, setWithPriority] = useState(false);
   const cart = fakeCart;
+  // const originalCart = useLoaderData();
 
   return (
     <div>
@@ -79,3 +82,8 @@ function CreateOrder() {
 }
 
 export default CreateOrder;
+
+// export async function loader() {
+//   const cart = createOrder();
+//   return cart;
+// }
